@@ -272,8 +272,6 @@ exports.getSingleUser = catchAsyncErrors(async (req, res, next) => {
 // update User Role -- Admin
 exports.updateUserRole = catchAsyncErrors(async (req, res, next) => {
   const newUserData = {
-    name: req.body.name,
-    email: req.body.email,
     role: req.body.role,
     status:req.body.status
   };
